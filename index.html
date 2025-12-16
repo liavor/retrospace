@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Recoil Rodeo - Vintage Edition</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="crt-overlay"></div>
+
+    <div id="ui-layer">
+        <div id="score-board">SKOR: <span id="score">0</span></div>
+        <div id="high-score-board">REKOR: <span id="high-score">0</span></div>
+        
+        <div id="combo-container">
+            <div id="combo-bar"></div>
+        </div>
+
+        <div id="start-screen">
+            <h1>REKOR: <span id="start-high-score">0</span></h1>
+            <h2>RECOIL RODEO</h2>
+            <p>Ekrana tıkla, silah ters teper.</p>
+            <p>Hızlı vur, KOMBO yap!</p>
+            <button id="start-btn">BAŞLA</button>
+        </div>
+
+        <div id="game-over-screen" class="hidden">
+            <h1>OYUN BİTTİ</h1>
+            <p>Skorun: <span id="final-score">0</span></p>
+            <p class="small">En Yüksek: <span id="end-high-score">0</span></p>
+            <button id="restart-btn">TEKRAR DENE</button>
+        </div>
+    </div>
+
+    <canvas id="gameCanvas"></canvas>
+
+    <script src="script.js"></script>
+</body>
+</html>
